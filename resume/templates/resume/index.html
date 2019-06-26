@@ -50,6 +50,9 @@
 		});
 	});
 </script>
+
+<!-- Start AOS -->
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 {% endblock head %}
 {% block content %}
 <div class="board col-md-3 mt-5 mx-5">
@@ -104,5 +107,51 @@
 		</div>
 	</div>
 </div>
-
+<div class="container mt-2 mb-5 text-center">
+	<p>Scroll Down</p>
+	<i class="fa fa-angle-double-down fa-2x"></i>
+</div>
+<br>
+<br>
+<br>
+<div class="container my-5">
+	<h2>Projects</h2>
+	<div class="row" data-aos="fade-up-left">
+		<div class="col-md-3 text-left">
+			<p><a href="https://house-cat.herokuapp.com/" target="_blank">Housecat</a></p>
+		</div>
+		<div class="col-md-9">
+			<p>Description which can take up multiple lines. Blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah.</p>
+		</div>
+	</div>
+	<br>
+	<div class="row" data-aos="fade-up-right">
+		<div class="col-md-3 text-left">
+			<p><a href="#">Pesticides</a></p>
+		</div>
+		<div class="col-md-9">
+			<p>Description which can take up multiple lines. Blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah.</p>
+		</div>
+	</div>
+</div>
+<div class="board mb-4 text-center">
+	<span id="no">The &nbsp; &nbsp; &nbsp;</span>
+	<span id="vacancy">End</span>
+</div>
 {% endblock content %}
+{% block close %}
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+	AOS.init({
+	  
+	  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+	  offset: 200, // offset (in px) from the original trigger point
+	  delay: 50, // values from 0 to 3000, with step 50ms
+	  duration: 1000, // values from 0 to 3000, with step 50ms
+	  easing: 'ease', // default easing for AOS animations
+	  once: false, // whether animation should happen only once - while scrolling down
+	  mirror: false, // whether elements should animate out while scrolling past them
+
+	});
+</script>
+{% endblock close %}
