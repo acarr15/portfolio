@@ -1,0 +1,23 @@
+/********************
+*
+* board
+*
+********************/
+body {
+  background-color: #effce0;
+}
+
+.board span {
+  font-size: 60px;
+  font-family: 'Monoton', cursive;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+h1, h2, h3, h4, p {
+  font-family: 'Nixie One', cursive;
+}
+
+.fa {
+  color: #7e7e7e;
+}
