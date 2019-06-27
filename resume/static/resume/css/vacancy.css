@@ -7,7 +7,7 @@ body {
   background-color: #effce0;
 }
 
-.board {
+.board, #contact, .section-title {
 	text-align: center;
 }
 
@@ -32,7 +32,7 @@ h1, h2, h3, h4, p {
 *
 ********************/
 @media(min-width: 576px){
-	.board {
+	.board, #contact, .section-title {
 		text-align: left;
 	}
 }
